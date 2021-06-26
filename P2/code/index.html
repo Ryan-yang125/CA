@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>P2</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <input type="button" value="生成图形" id="graphGenerate" />
+      <input type="button" value="清空画布" id="clearAll" />
+      <input type="button" value="清空坐标内存" id="clearPoints">
+      <input type="button" value="线性插值" id="linearPoint" />
+      <input type="button" value="顺时针" id="clockwise">
+      <input type="button" value="逆时针" id="anticlockwise">
+      <input type="button" value="图形模式" id="playMode">
+      <div class="dropdown">
+        <button id="basicgraph">选择图形</button>
+        <button id="star"">⭐️</button>
+        <button id="pencil">✏️</button>
+      </div>
+      <canvas class="mycanvas">
+        <p>One Canvas</p>
+      </canvas>
+      <script src="app.js"></script>
+    </div>
+  </body>
+</html>

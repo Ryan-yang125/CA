@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Cardinal</title>
+    <style>
+      body {
+        margin: 0;
+        overflow: hidden;
+      }
+    </style>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  
+  <body>
+    <div id="root">
+      <div id="header_show"><h1 style="text-align:center;">Cardinal Curve</h1></div>
+      <div id="menubar">
+        <div class="ButtonBox">
+          <button class = "button" id = "ClearButton"><p>清空画布</p></button>
+          <button class = "button" id = "PointsButton"><p>显示插值点</p></button>
+          <button class = "button" id = "PathButton"><p>生成曲线</p></button>
+          <button class = "button" id = "CarMove"><p>开始运动</p></button>
+        </div>
+        <!-- 读取小车图片 -->
+        <!-- <input type='file' accept='image/*' onchange='openFile(event)'> -->
+        <!-- 控制tension滑块 -->
+        <div id="container">
+          <div class="slidecontainer" id="tensioncontainer">
+            <input type="range" min="0" max="100" value="50" class="slider" id="TensionRange">
+            <div class="show" id="TensionShow" style="font-weight: bold;"></div>
+          </div>
+          <!-- 控制grain滑块 -->
+          <div class="slidecontainer" id="graincontainer">
+            <input type="range" min="10" max="50" value="30" class="slider" id="GrainRange">
+            <div class="show" id="GrainShow" style="font-weight: bold;"></div>
+          </div>
+          <!-- 控制小车速度滑块 -->
+          <div class="slidecontainer" id="speedcontainer">
+            <input type="range" min="1" max="40" value="20" class="slider" id="SpeedRange">
+            <div class="show" id="SpeedShow" style="font-weight: bold;"></div>
+          </div>
+        </div>
+      </div>
+      <!-- <canvas id="car_canvas" width=640 height=180></canvas> -->
+      <canvas class="Mycanvas">
+        <p>One Canvas</p>
+      </canvas>
+    </div>
+    <script src="cardinal.js";type = "text/javascript"></script>
+  </body>
+</html>
